@@ -46,7 +46,7 @@ def can_find_the_first_item_from_the_database_using_id
 end
 
 def can_find_by_multiple_attributes
-  Movie.where('title = "Title" AND release_date = 2000 AND director = "Me"', params)
+  Movie.where('title = "Title" AND release_date = 2000 AND director = "Me"')
   # title == "Title"
   # release_date == 2000
   # director == "Me"
