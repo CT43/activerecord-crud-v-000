@@ -25,7 +25,7 @@ end
 def can_be_created_in_a_block(args = {title: "Home Alone", release_date: 1990})
   Movie.create do |m|
     m.send("#{args.keys[0]}") = m.send("#{args.values[0]}")
-    m.args.keys[1] = m.args.values[1]
+    m.send("#{args.keys[1]}") = m.send("#{args.values[1]}")
   end
 end
 
