@@ -24,8 +24,8 @@ end
 
 def can_be_created_in_a_block(args = {title: "Home Alone", release_date: 1990})
   Movie.create do |m|
-    m.args.keys[0] = args.values[0]
-    m.args.keys[1] = args.values[1]
+    m.title = args.values[0]
+    m.release_date = args.values[1]
   end
 end
 
